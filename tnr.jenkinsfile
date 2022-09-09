@@ -2,6 +2,7 @@ pipeline {
     options {
         skipDefaultCheckout(true)
     }
+    // Lance le job a chaque push dans le repo
     triggers { 
         pollSCM "*/1 * * * *" 
     }
